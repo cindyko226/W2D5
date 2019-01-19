@@ -65,7 +65,7 @@ class ResizingIntSet
   end
 
   def insert(num)
-    # self[num] << num unless include?(num)
+    
     if @count == num_buckets && include?(num) == false 
       resize!
     end
